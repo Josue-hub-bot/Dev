@@ -76,9 +76,9 @@ message = message.encode()
 # et notre texte. Si la clé peut déchiffrer le message
 # original, nous avons gagné. Vraiment ?
 guess_key_stream = xor_bytes(message, secret)
-print("La clé de chiffrement 1 : ", guess_key_stream)
+#print("La clé de chiffrement 1 : ", guess_key_stream)
 plain_text = xor_bytes(guess_key_stream, secret)
-print("Le texte original de l'équipe 1 : ", plain_text)
+#print("Le texte original de l'équipe 1 : ", plain_text)
 
 # L'équipe 2 essaie avec le texte en clair DES SURPRIS
 message = "DES SURPRIS"
@@ -90,6 +90,6 @@ message = message.encode()
 # et notre texte. Si la clé peut déchiffrer le message
 # original, nous avons gagné. Vraiment ?
 guess_key_stream = xor_bytes(message, secret)
-print("La clé de chiffrement 2 : ", guess_key_stream)
+#print("La clé de chiffrement 2 : ", guess_key_stream)
 plain_text = xor_bytes(guess_key_stream, secret)
-print("Le texte original de l'équipe 2 : ", plain_text)
+#print("Le texte original de l'équipe 2 : ", plain_text)

@@ -50,3 +50,5 @@ class KeyStream:
 		"""
 		
 		return self.rand() % 256
+
+print ("b1onjour")

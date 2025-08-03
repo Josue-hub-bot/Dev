@@ -52,4 +52,13 @@ print("message chiffré :",secret)
 # On génère une clé de mappage différente pour chiffrer
 dkey = generate_dkey(key)
 message = encrypt(dkey, secret)
-print ("message déchiffré :", message)
+#print ("message déchiffré :", message)
+
+# Attaque sur le chiffrement de César
+print("####################################")
+print("Attaque sur le chiffrement de César")
+for i in range(26):
+	dkey = generate_key(i)
+	message = encrypt(dkey, secret)
+	print(message)
+print("####################################")
